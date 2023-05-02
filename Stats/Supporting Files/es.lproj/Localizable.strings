@@ -117,11 +117,11 @@
 "Check for update" = "Buscar actualizaciones";
 "Show icon in dock" = "Muestra el icono en el dock";
 "Start at login" = "Arrancar al iniciar sesión";
-"Build number" = "Build number";
+"Build number" = "Número de compilación";
 "Reset settings" = "Reset settings";
 "Pause the Stats" = "Pause the Stats";
 "Resume the Stats" = "Resume the Stats";
-"Combined modules" = "Combined modules";
+"Combined modules" = "Módulos combinados";
 "Spacing" = "Spacing";
 
 // Dashboard
@@ -129,8 +129,8 @@
 "Uptime" = "Tiempo de actividad";
 "Number of cores" = "%0 núcleos";
 "Number of threads" = "%0 hilos";
-"Number of e-cores" = "%0 efficiency cores";
-"Number of p-cores" = "%0 performance cores";
+"Number of e-cores" = "%0 núcleos de eficiencia";
+"Number of p-cores" = "%0 núcleos de trabajo";
 
 // Update
 "The latest version of Stats installed" = "La última versión de Stats está instalada";
@@ -169,12 +169,12 @@
 "Number of reads in the chart" = "Number of reads in the chart";
 "Color of download" = "Color de descarga";
 "Color of upload" = "Color de subida";
-"Monospaced font" = "Monospaced font";
+"Monospaced font" = "Fuente monoespaciada";
 
 // Module Kit
 "Open module settings" = "Abrir la configruación del módulo";
 "Select widget" = "Seleccionar el widget %0";
-"Open widget settings" = "Open widget settings";
+"Open widget settings" = "Abrir ajustes de widget";
 "Update interval" = "Intervalo de actualización";
 "Usage history" = "Historial de uso";
 "Details" = "Detalles";
@@ -182,10 +182,10 @@
 "Pictogram" = "Ícono";
 "Module settings" = "Configuración del módulo";
 "Widget settings" = "Configuración de widget";
-"Popup settings" = "Popup settings";
-"Merge widgets" = "Merge widgets";
-"No available widgets to configure" = "No available widgets to configure";
-"No options to configure for the popup in this module" = "No options to configure for the popup in this module";
+"Popup settings" = "Configuración de emergente";
+"Merge widgets" = "Combinar widgets";
+"No available widgets to configure" = "No hay widgets para configurar.";
+"No options to configure for the popup in this module" = "La ventana emergente en este módulo no contiene opciones.";
 
 // Modules
 "Number of top processes" = "Número de procesos principales";
@@ -359,7 +359,7 @@
 
 // Bluetooth
 "Battery to show" = "Battery to show";
-"No Bluetooth devices are available" = "No Bluetooth devices are available";
+"No Bluetooth devices are available" = "No hay dispositivos Bluetooth disponibles.";
 
 // Colors
 "Based on utilization" = "Basado en utilización";
