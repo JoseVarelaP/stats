@@ -72,7 +72,7 @@
 
 // Setup
 "Stats Setup" = "Configuración de Stats";
-"Previous" = "anterior";
+"Previous" = "Anterior";
 "Previous page" = "Pagina anterior";
 "Next" = "Siguiente";
 "Next page" = "Pagina siguiente";
@@ -89,7 +89,7 @@
 "Check for a new version every month (once a month)" = "Comprobar si hay una versión nueva todos los meses (una vez al mes)";
 "Never check for updates (not recommended)" = "Nunca comprobar si hay una versión nueva (no es recomendado)";
 "The configuration is completed" = "La configuración ha sido completada";
-"finish_setup_message" = "Todo ha sido configurado! \n Stats es una herramienta de fuente abierta, es gratis y siempre lo será. \n Si lo disfrutas puedes apoyar el proyecto, siempre es apreciado!";
+"finish_setup_message" = "¡Todo ha sido configurado! \n Stats es una herramienta de fuente abierta, es gratis y siempre lo será. \n Si lo disfrutas puedes apoyar el proyecto, ¡siempre es apreciado!";
 
 // Alerts
 "New version available" = "Nueva versión disponible";
@@ -130,7 +130,7 @@
 "Number of cores" = "%0 núcleos";
 "Number of threads" = "%0 hilos";
 "Number of e-cores" = "%0 núcleos de eficiencia";
-"Number of p-cores" = "%0 núcleos de trabajo";
+"Number of p-cores" = "%0 núcleos de rendimiento";
 
 // Update
 "The latest version of Stats installed" = "La última versión de Stats está instalada";
@@ -161,11 +161,11 @@
 "Battery widget" = "Batería";
 "Text widget" = "Texto";
 "Memory widget" = "Memoria";
-"Static width" = "Static width";
+"Static width" = "Tamaño fijo";
 "Tachometer widget" = "Tachometer";
 "State widget" = "State widget";
-"Show symbols" = "Show symbols";
-"Label widget" = "Label";
+"Show symbols" = "Mostrar símbolos";
+"Label widget" = "Etiqueta";
 "Number of reads in the chart" = "Number of reads in the chart";
 "Color of download" = "Color de descarga";
 "Color of upload" = "Color de subida";
@@ -180,18 +180,18 @@
 "Details" = "Detalles";
 "Top processes" = "Procesos principales";
 "Pictogram" = "Ícono";
-"Module settings" = "Configuración del módulo";
-"Widget settings" = "Configuración de widget";
-"Popup settings" = "Configuración de emergente";
+"Module settings" = "Ajustes del módulo";
+"Widget settings" = "Ajustes de widget";
+"Popup settings" = "Ajustes de ventana";
 "Merge widgets" = "Combinar widgets";
 "No available widgets to configure" = "No hay widgets para configurar.";
-"No options to configure for the popup in this module" = "La ventana emergente en este módulo no contiene opciones.";
+"No options to configure for the popup in this module" = "Este módulo no contiene opciones para la ventana emergente.";
 
 // Modules
 "Number of top processes" = "Número de procesos principales";
 "Update interval for top processes" = "Intervalo de actualización para los procesos principales";
-"Notification level" = "Notification level";
-"Chart color" = "Chart color";
+"Notification level" = "Enviar notificación al porcentaje";
+"Chart color" = "Color de gráfica";
 
 // CPU
 "CPU usage" = "Uso del CPU";
@@ -236,7 +236,7 @@
 "Core clock" = "Reloj del núcleo";
 "Memory clock" = "Reloj de la memoria";
 "Utilization" = "Utilización";
-"Render utilization" = "Render utilization";
+"Render utilization" = "Uso renderizado";
 "Tiler utilization" = "Tiler utilization";
 "GPU usage threshold" = "Limite de uso del GPU";
 "GPU usage is" = "El uso del GPU es";
@@ -254,7 +254,7 @@
 "Split the value (App/Wired/Compressed)" = "Dividir el valor (App/Física/Comprimida)";
 "RAM utilization threshold" = "RAM utilization threshold";
 "RAM utilization is" = "RAM utilization is %0";
-"App color" = "App color";
+"App color" = "Color de aplicación";
 "Wired color" = "Wired color";
 "Compressed color" = "Compressed color";
 "Free color" = "Free color";
@@ -268,23 +268,23 @@
 "Switch view" = "Cambiar vista";
 "Disk utilization threshold" = "Disk utilization threshold";
 "Disk utilization is" = "Disk utilization is %0";
-"Read color" = "Read color";
-"Write color" = "Write color";
+"Read color" = "Color de lectura";
+"Write color" = "Color de escritura";
 
 // Sensors
 "Temperature unit" = "Unidad de temperatura";
 "Celsius" = "Celsius";
 "Fahrenheit" = "Fahrenheit";
 "Save the fan speed" = "Guardar la velocidad del ventilador";
-"Fan" = "Fan";
+"Fan" = "Ventilador";
 "HID sensors" = "Sensores HID";
-"Synchronize fan's control" = "Synchronize fan's control";
+"Synchronize fan's control" = "Sincronizar control de ventilador";
 "Current" = "Current";
-"Energy" = "Energy";
-"Show unknown sensors" = "Show unknown sensors";
+"Energy" = "Energia";
+"Show unknown sensors" = "Mostrar sensores desconocidos";
 "Install fan helper" = "Install fan helper";
 "Uninstall fan helper" = "Uninstall fan helper";
-"Fan value" = "Fan value";
+"Fan value" = "Valor del ventilador";
 
 // Network
 "Uploading" = "Carga";
@@ -307,9 +307,9 @@
 "Processes based" = "Proceso";
 "Reset data usage" = "Restablecer el uso de datos";
 "VPN mode" = "Modo VPN";
-"Standard" = "Standard";
-"Security" = "Security";
-"Channel" = "Channel";
+"Standard" = "Estándar";
+"Security" = "Seguridad";
+"Channel" = "Canal";
 "Common scale" = "Common scale";
 "Autodetection" = "Autodetection";
 "Widget activation threshold" = "Widget activation threshold";
@@ -319,7 +319,7 @@
 "Connectivity host (ICMP)" = "Connectivity host (ICMP)";
 "Leave empty to disable the check" = "Leave empty to disable the check";
 "Transparent pictogram when no activity" = "Transparent pictogram when no activity";
-"Connectivity history" = "Connectivity history";
+"Connectivity history" = "Historial de conectividad";
 
 // Battery
 "Level" = "Nivel";
@@ -352,13 +352,13 @@
 "Time format" = "Formato de tiempo";
 "Hide additional information when full" = "Ocultar información adicional cuando la batería está cargada";
 "Last charge" = "Última carga";
-"Capacity" = "Capacity";
-"current / maximum / designed" = "current / maximum / designed";
-"Low power mode" = "Low power mode";
-"Percentage inside the icon" = "Percentage inside the icon";
+"Capacity" = "Capacidad";
+"current / maximum / designed" = "actual / máximo / diseñado";
+"Low power mode" = "Ahorro de energía";
+"Percentage inside the icon" = "Porcentaje dentro del icono";
 
 // Bluetooth
-"Battery to show" = "Battery to show";
+"Battery to show" = "Bateria a mostrar";
 "No Bluetooth devices are available" = "No hay dispositivos Bluetooth disponibles.";
 
 // Colors
