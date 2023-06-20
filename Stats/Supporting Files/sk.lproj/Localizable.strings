@@ -26,6 +26,8 @@
 "Open Battery settings" = "Otvoriť nastavenie batérie";
 "Bluetooth" = "Bluetooth";
 "Open Bluetooth settings" = "Otvoriť nastavenie bluetooth";
+"Clock" = "Clock";
+"Open Clock settings" = "Open clock settings";
 
 // Words
 "Unknown" = "Neznámy";
@@ -69,6 +71,8 @@
 "Logarithmic" = "Logaritmická";
 "Cores" = "Jadrá";
 "Settings" = "Nastavenia";
+"Name" = "Name";
+"Format" = "Format";
 
 // Setup
 "Stats Setup" = "Nastavenie Stats";
@@ -159,7 +163,7 @@
 "Network chart widget" = "Sieťový graf";
 "Speed widget" = "Rýchlosť";
 "Battery widget" = "Batéria";
-"Text widget" = "Text";
+"Stack widget" = "Stack";
 "Memory widget" = "Pamäť";
 "Static width" = "Pevná šírka";
 "Tachometer widget" = "Tachometer";
@@ -270,6 +274,7 @@
 "Disk utilization is" = "Využitie disku je %0";
 "Read color" = "Read color";
 "Write color" = "Write color";
+"Disk usage" = "Disk usage";
 
 // Sensors
 "Temperature unit" = "Jednotka teploty";
@@ -320,6 +325,12 @@
 "Leave empty to disable the check" = "Ponechajte prázdne, ak chcete vypnúť kontrolu";
 "Transparent pictogram when no activity" = "Priehľadný piktogram, keď sa nevykonáva žiadna činnosť";
 "Connectivity history" = "Connectivity history";
+"Auto-refresh public IP address" = "Auto-refresh public IP address";
+"Every hour" = "Every hour";
+"Every 12 hours" = "Every 12 hours";
+"Every 24 hours" = "Every 24 hours";
+"Network activity" = "Network activity";
+"Last reset" = "Last reset %0 ago";
 
 // Battery
 "Level" = "Úroveň";
@@ -356,10 +367,15 @@
 "current / maximum / designed" = "aktuálne / maximálne / projektované";
 "Low power mode" = "Režim nízkej spotreby";
 "Percentage inside the icon" = "Percentá vo vnútri ikony";
+"Colorize battery" = "Colorize battery";
 
 // Bluetooth
 "Battery to show" = "Zobraziť batériu";
 "No Bluetooth devices are available" = "Nie sú k dispozícii žiadne zariadenia Bluetooth";
+
+// Clock
+"Time zone" = "Time zone";
+"Local" = "Local";
 
 // Colors
 "Based on utilization" = "Na základe využívania";

@@ -9,30 +9,30 @@ macOS system monitor in your menu bar
 
 ## Installation
 ### Manual
-You can download the latest version [here](https://github.com/exelban/stats/releases/latest/download/Stats.dmg).  
+You can download the latest version [here](https://github.com/exelban/stats/releases/latest/download/Stats.dmg).
 This will download a file called `Stats.dmg`. Open it and move the app to the application folder.
 
 ### Homebrew
-To install it using Homebrew, open the Terminal app and type:  
+To install it using Homebrew, open the Terminal app and type:
 ```bash
 brew install stats
 ```
 
 ## Requirements
-Stats is currently supported on macOS 10.14 (Mojave) and higher.
+Stats is supported on the released macOS version starting from macOS 10.15 (Catalina).
 
 ## Features
-Stats is an application that allows you to monitor your macOS system. 
+Stats is an application that allows you to monitor your macOS system.
 
- - Battery level
- - Bluetooth devices
  - CPU utilization
- - Disk utilization
- - Fan/s control
  - GPU utilization
  - Memory usage
+ - Disk utilization
  - Network usage
+ - Battery level
+ - Fan's control
  - Sensors information (Temperature/Voltage/Power)
+ - Bluetooth devices
  - Multiple time zone clock
 
 ## FAQs
@@ -56,6 +56,10 @@ The CPU frequency is available only on Intel-based macs. You need to have instal
 
 ### How to reduce energy impact or CPU usage of Stats?
 Stats tries to be efficient as it's possible. But reading some data periodically is not a cheap task. Each module has its own "price". So, if you want to reduce energy impact from the Stats you need to disable some Stats modules. The most inefficient modules are Sensors and Bluetooth. Disabling these modules could reduce CPU usage and power efficiency by up to 50% in some cases.
+
+### Why my issue was closed without any response?
+Most probably because it's a duplicated issue and there is an answer to the question, report, or proposition. Please use a search by closed issues to get an answer.
+So, if your issue was closed without any response, most probably it already has a response.
 
 ## Supported languages
 - English
@@ -81,12 +85,12 @@ Stats tries to be efficient as it's possible. But reading some data periodically
 - Romanian (thanks to [razluta](https://github.com/razluta))
 - Dutch (thanks to [ngohungphuc](https://github.com/ngohungphuc))
 - Hrvatski (thanks to [milotype](https://github.com/milotype))
-- Danish (thanks to [casperes1996](https://github.com/casperes1996))
+- Danish (thanks to [casperes1996](https://github.com/casperes1996) and [aleksanderbl29](https://github.com/aleksanderbl29))
 - Catalan (thanks to [davidalonso](https://github.com/davidalonso))
 - Indonesian (thanks to [yooody](https://github.com/yooody))
 - Hebrew (thanks to [BadSugar](https://github.com/BadSugar))
 - Slovenian (thanks to [zigapovhe](https://github.com/zigapovhe))
-- Greek (thanks to [sudoxcess](https://github.com/sudoxcess))
+- Greek (thanks to [sudoxcess](https://github.com/sudoxcess) and [vaionicle](https://github.com/vaionicle))
 - Persian (thanks to [ShawnAlisson](https://github.com/ShawnAlisson))
 - Slovenský (thanks to [martinbernat](https://github.com/martinbernat))
 - Thai (thanks to [apiphoomchu](https://github.com/apiphoomchu))

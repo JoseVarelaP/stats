@@ -26,6 +26,8 @@
 "Open Battery settings" = "Buka pengaturan baterai";
 "Bluetooth" = "Bluetooth";
 "Open Bluetooth settings" = "Buka pengaturan bluetooth";
+"Clock" = "Clock";
+"Open Clock settings" = "Open clock settings";
 
 // Words
 "Unknown" = "Tidak dikenal";
@@ -69,6 +71,8 @@
 "Logarithmic" = "Logarithmic";
 "Cores" = "Cores";
 "Settings" = "Settings";
+"Name" = "Name";
+"Format" = "Format";
 
 // Setup
 "Stats Setup" = "Stats Setup";
@@ -159,7 +163,7 @@
 "Network chart widget" = "Diagram jaringan";
 "Speed widget" = "Kecepatan";
 "Battery widget" = "Baterai";
-"Text widget" = "Teks";
+"Stack widget" = "Stack";
 "Memory widget" = "Memori";
 "Static width" = "Lebar statis";
 "Tachometer widget" = "Takometer";
@@ -270,6 +274,7 @@
 "Disk utilization is" = "Disk utilization is %0";
 "Read color" = "Read color";
 "Write color" = "Write color";
+"Disk usage" = "Disk usage";
 
 // Sensors
 "Temperature unit" = "Unit suhu";
@@ -320,6 +325,12 @@
 "Leave empty to disable the check" = "Leave empty to disable the check";
 "Transparent pictogram when no activity" = "Transparent pictogram when no activity";
 "Connectivity history" = "Connectivity history";
+"Auto-refresh public IP address" = "Auto-refresh public IP address";
+"Every hour" = "Every hour";
+"Every 12 hours" = "Every 12 hours";
+"Every 24 hours" = "Every 24 hours";
+"Network activity" = "Network activity";
+"Last reset" = "Last reset %0 ago";
 
 // Battery
 "Level" = "Level";
@@ -356,10 +367,15 @@
 "current / maximum / designed" = "current / maksimal / dirancang";
 "Low power mode" = "Low power mode";
 "Percentage inside the icon" = "Percentage inside the icon";
+"Colorize battery" = "Colorize battery";
 
 // Bluetooth
 "Battery to show" = "Baterai untuk ditampilkan";
 "No Bluetooth devices are available" = "Tidak ada perangkat bluetooth yang tersedia";
+
+// Clock
+"Time zone" = "Time zone";
+"Local" = "Local";
 
 // Colors
 "Based on utilization" = "Berdasarkan pemanfaatan";

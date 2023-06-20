@@ -26,6 +26,8 @@
 "Open Battery settings" = "Відкрити налаштування акумулятора";
 "Bluetooth" = "Bluetooth";
 "Open Bluetooth settings" = "Відкрити налаштування bluetooth";
+"Clock" = "Годинник";
+"Open Clock settings" = "Відкрити налаштування годинника";
 
 // Words
 "Unknown" = "Невідомо";
@@ -69,6 +71,8 @@
 "Logarithmic" = "Логарифмічне";
 "Cores" = "Ядра";
 "Settings" = "Налаштування";
+"Name" = "Назва";
+"Format" = "Формат";
 
 // Setup
 "Stats Setup" = "Stats Setup";
@@ -152,15 +156,15 @@
 "Display mode" = "Режим відображення";
 "One row" = "Один ряд";
 "Two rows" = "Два ряди";
-"Mini widget" = "Mini";
-"Line chart widget" = "Line chart";
-"Bar chart widget" = "Bar chart";
-"Pie chart widget" = "Pie chart";
-"Network chart widget" = "Network chart";
-"Speed widget" = "Speed";
-"Battery widget" = "Battery";
-"Text widget" = "Text";
-"Memory widget" = "Memory";
+"Mini widget" = "Міні";
+"Line chart widget" = "Лінійна діаграма";
+"Bar chart widget" = "Гістограма";
+"Pie chart widget" = "Кругова діаграма";
+"Network chart widget" = "Діаграма мережі";
+"Speed widget" = "Швидкість";
+"Battery widget" = "Акумулятор";
+"Stack widget" = "Стек";
+"Memory widget" = "Пам'ять";
 "Static width" = "Статична ширина";
 "Tachometer widget" = "Тахометр";
 "State widget" = "Стан";
@@ -270,6 +274,7 @@
 "Disk utilization is" = "Використання диска %0";
 "Read color" = "Колір зчитування";
 "Write color" = "Колір запису";
+"Disk usage" = "Використання диска";
 
 // Sensors
 "Temperature unit" = "Одиниця виміру температури";
@@ -320,6 +325,12 @@
 "Leave empty to disable the check" = "Залиште пустим, щоб вимкнути перевірку";
 "Transparent pictogram when no activity" = "Прозора піктограма, коли немає активності";
 "Connectivity history" = "Історія підключення";
+"Auto-refresh public IP address" = "Автоматичне оновлення IP-адреси";
+"Every hour" = "Щогодини";
+"Every 12 hours" = "Кожні 12 годин";
+"Every 24 hours" = "Кожні 24 години";
+"Network activity" = "Мережева активність";
+"Last reset" = "Останнє скидання %0 тому";
 
 // Battery
 "Level" = "Рівень заряду";
@@ -356,10 +367,15 @@
 "current / maximum / designed" = "поточна / максимальна / запроектована";
 "Low power mode" = "Режим низької потужності";
 "Percentage inside the icon" = "Відсоток всередині віджету";
+"Colorize battery" = "Розфарбувати акумулятор";
 
 // Bluetooth
 "Battery to show" = "Активна батарея";
 "No Bluetooth devices are available" = "Немає пристроїв Bluetooth";
+
+// Clock
+"Time zone" = "Часовий пояс";
+"Local" = "Місцевий";
 
 // Colors
 "Based on utilization" = "На основі використання";

@@ -26,6 +26,8 @@
 "Open Battery settings" = "Abrir ajustes de batería";
 "Bluetooth" = "Bluetooth";
 "Open Bluetooth settings" = "Abrir ajustes de Bluetooth";
+"Clock" = "Clock";
+"Open Clock settings" = "Open clock settings";
 
 // Words
 "Unknown" = "Desconocido";
@@ -69,6 +71,8 @@
 "Logarithmic" = "Logarítmica";
 "Cores" = "Núcleos";
 "Settings" = "Ajustes";
+"Name" = "Name";
+"Format" = "Format";
 
 // Setup
 "Stats Setup" = "Configuración de Stats";
@@ -159,7 +163,7 @@
 "Network chart widget" = "Gráfico de redes";
 "Speed widget" = "Velocidad";
 "Battery widget" = "Batería";
-"Text widget" = "Texto";
+"Stack widget" = "Stack";
 "Memory widget" = "Memoria";
 "Static width" = "Tamaño fijo";
 "Tachometer widget" = "Tachometer";
@@ -270,6 +274,7 @@
 "Disk utilization is" = "Disk utilization is %0";
 "Read color" = "Color de lectura";
 "Write color" = "Color de escritura";
+"Disk usage" = "Disk usage";
 
 // Sensors
 "Temperature unit" = "Unidad de temperatura";
@@ -320,6 +325,12 @@
 "Leave empty to disable the check" = "Leave empty to disable the check";
 "Transparent pictogram when no activity" = "Transparent pictogram when no activity";
 "Connectivity history" = "Historial de conectividad";
+"Auto-refresh public IP address" = "Auto-refresh public IP address";
+"Every hour" = "Every hour";
+"Every 12 hours" = "Every 12 hours";
+"Every 24 hours" = "Every 24 hours";
+"Network activity" = "Network activity";
+"Last reset" = "Last reset %0 ago";
 
 // Battery
 "Level" = "Nivel";
@@ -356,10 +367,15 @@
 "current / maximum / designed" = "actual / máximo / diseñado";
 "Low power mode" = "Ahorro de energía";
 "Percentage inside the icon" = "Porcentaje dentro del icono";
+"Colorize battery" = "Colorize battery";
 
 // Bluetooth
 "Battery to show" = "Bateria a mostrar";
 "No Bluetooth devices are available" = "No hay dispositivos Bluetooth disponibles.";
+
+// Clock
+"Time zone" = "Time zone";
+"Local" = "Local";
 
 // Colors
 "Based on utilization" = "Basado en utilización";

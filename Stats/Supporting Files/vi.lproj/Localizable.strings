@@ -26,6 +26,8 @@
 "Open Battery settings" = "Mở cài đặt Pin";
 "Bluetooth" = "Bluetooth";
 "Open Bluetooth settings" = "Mở cài đặt bluetooth";
+"Clock" = "Clock";
+"Open Clock settings" = "Open clock settings";
 
 // Words
 "Unknown" = "Không xác định";
@@ -69,6 +71,8 @@
 "Logarithmic" = "Logarithmic";
 "Cores" = "Cores";
 "Settings" = "Settings";
+"Name" = "Name";
+"Format" = "Format";
 
 // Setup
 "Stats Setup" = "Cài đặt Stats";
@@ -159,7 +163,7 @@
 "Network chart widget" = "Biểu đồ mạng";
 "Speed widget" = "Tốc độ";
 "Battery widget" = "Pin";
-"Text widget" = "Văn bản";
+"Stack widget" = "Stack";
 "Memory widget" = "Bộ nhớ";
 "Static width" = "Chiều rộng cố định";
 "Tachometer widget" = "Máy đo tốc độ";
@@ -270,6 +274,7 @@
 "Disk utilization is" = "Mức sử dụng đĩa là %0";
 "Read color" = "Read color";
 "Write color" = "Write color";
+"Disk usage" = "Disk usage";
 
 // Sensors
 "Temperature unit" = "Đơn vị nhiệt độ";
@@ -320,6 +325,12 @@
 "Leave empty to disable the check" = "Leave empty to disable the check";
 "Transparent pictogram when no activity" = "Transparent pictogram when no activity";
 "Connectivity history" = "Connectivity history";
+"Auto-refresh public IP address" = "Auto-refresh public IP address";
+"Every hour" = "Every hour";
+"Every 12 hours" = "Every 12 hours";
+"Every 24 hours" = "Every 24 hours";
+"Network activity" = "Network activity";
+"Last reset" = "Last reset %0 ago";
 
 // Battery
 "Level" = "Dung lượng Pin";
@@ -356,10 +367,15 @@
 "current / maximum / designed" = "current / tối đa / thiết kế";
 "Low power mode" = "Low power mode";
 "Percentage inside the icon" = "Percentage inside the icon";
+"Colorize battery" = "Colorize battery";
 
 // Bluetooth
 "Battery to show" = "Pin hiển thị";
 "No Bluetooth devices are available" = "Không có thiết bị Bluetooth nào khả dụng";
+
+// Clock
+"Time zone" = "Time zone";
+"Local" = "Local";
 
 // Colors
 "Based on utilization" = "Dựa trên việc sử dụng";

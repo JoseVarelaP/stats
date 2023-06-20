@@ -26,6 +26,8 @@
 "Open Battery settings" = "打開電池設定";
 "Bluetooth" = "藍牙";
 "Open Bluetooth settings" = "打開藍牙設定";
+"Clock" = "時鐘";
+"Open Clock settings" = "打開時鐘設定";
 
 // Words
 "Unknown" = "未知";
@@ -69,6 +71,8 @@
 "Logarithmic" = "對數";
 "Cores" = "核心數";
 "Settings" = "設定";
+"Name" = "名稱";
+"Format" = "格式";
 
 // Setup
 "Stats Setup" = "Stats 設定";
@@ -159,7 +163,7 @@
 "Network chart widget" = "網狀圖";
 "Speed widget" = "讀寫速度";
 "Battery widget" = "電池";
-"Text widget" = "文字";
+"Stack widget" = "Stack";
 "Memory widget" = "容量";
 "Static width" = "靜態寬度";
 "Tachometer widget" = "轉速計";
@@ -268,8 +272,9 @@
 "Switch view" = "切換視窗";
 "Disk utilization threshold" = "磁碟利用率臨界點";
 "Disk utilization is" = "磁碟利用率為：%0";
-"Read color" = "Read color";
-"Write color" = "Write color";
+"Read color" = "讀取色彩";
+"Write color" = "寫入色彩";
+"Disk usage" = "磁碟使用率";
 
 // Sensors
 "Temperature unit" = "溫度單位";
@@ -320,6 +325,12 @@
 "Leave empty to disable the check" = "留空來停用檢查";
 "Transparent pictogram when no activity" = "未連線時隱藏標示";
 "Connectivity history" = "連線歷程紀錄";
+"Auto-refresh public IP address" = "自動重新整理公用 IP 位址";
+"Every hour" = "每小時";
+"Every 12 hours" = "每 12 小時";
+"Every 24 hours" = "每 24 小時";
+"Network activity" = "網路活動";
+"Last reset" = "上次重置於 %0 前";
 
 // Battery
 "Level" = "電量";
@@ -356,10 +367,15 @@
 "current / maximum / designed" = "目前容量/最大容量/設計容量";
 "Low power mode" = "低電量模式";
 "Percentage inside the icon" = "在圖示內顯示百分比";
+"Colorize battery" = "啟用彩色電池圖示";
 
 // Bluetooth
 "Battery to show" = "顯示藍牙裝置的電池電量";
 "No Bluetooth devices are available" = "沒有可用的藍牙裝置";
+
+// Clock
+"Time zone" = "時區";
+"Local" = "當地";
 
 // Colors
 "Based on utilization" = "根據使用率";

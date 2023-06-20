@@ -32,7 +32,7 @@ public struct Stack_t: KeyValue_p {
     }
 }
 
-public class SensorsWidget: WidgetWrapper {
+public class StackWidget: WidgetWrapper {
     private var modeState: StackMode = .auto
     private var fixedSizeState: Bool = false
     private var monospacedFontState: Bool = false
@@ -57,7 +57,7 @@ public class SensorsWidget: WidgetWrapper {
         
         self.orderTableView = OrderTableView(&self.values)
         
-        super.init(.sensors, title: title, frame: CGRect(
+        super.init(.stack, title: title, frame: CGRect(
             x: 0,
             y: Constants.Widget.margin.y,
             width: Constants.Widget.width,
@@ -83,7 +83,7 @@ public class SensorsWidget: WidgetWrapper {
         super.draw(dirtyRect)
         
         guard !self.values.isEmpty else {
-            self.drawNoData()
+            self.setWidth(0)
             return
         }
         
@@ -137,7 +137,7 @@ public class SensorsWidget: WidgetWrapper {
     
     private func drawOneRow(_ x: CGFloat, _ element: Stack_t) -> CGFloat {
         var font: NSFont
-        if #available(macOS 10.15, *), self.monospacedFontState {
+        if self.monospacedFontState {
             font = NSFont.monospacedDigitSystemFont(ofSize: 13, weight: .regular)
         } else {
             font = NSFont.systemFont(ofSize: 13, weight: .regular)
@@ -166,7 +166,7 @@ public class SensorsWidget: WidgetWrapper {
         let rowHeight: CGFloat = self.frame.height / 2
         
         var font: NSFont
-        if #available(macOS 10.15, *), self.monospacedFontState {
+        if self.monospacedFontState {
             font = NSFont.monospacedDigitSystemFont(ofSize: 10, weight: .light)
         } else {
             font = NSFont.systemFont(ofSize: 10, weight: .light)
@@ -226,28 +226,6 @@ public class SensorsWidget: WidgetWrapper {
         })
     }
     
-    private func drawNoData() {
-        let size: CGFloat = 15
-        let lineWidth = 1 / (NSScreen.main?.backingScaleFactor ?? 1)
-        let offset = lineWidth / 2
-        let totalWidth: CGFloat = (Constants.Widget.margin.x*2) + size + (lineWidth*2)
-        
-        NSColor.textColor.set()
-        
-        var circle = NSBezierPath()
-        circle = NSBezierPath(ovalIn: CGRect(x: Constants.Widget.margin.x+offset, y: 1+offset, width: size, height: size))
-        circle.stroke()
-        circle.lineWidth = lineWidth
-        
-        let line = NSBezierPath()
-        line.move(to: NSPoint(x: 3, y: 3.5))
-        line.line(to: NSPoint(x: 13.5, y: 14))
-        line.lineWidth = lineWidth
-        line.stroke()
-        
-        self.setWidth(totalWidth)
-    }
-    
     // MARK: - Settings
     
     public override func settings() -> NSView {
@@ -255,7 +233,7 @@ public class SensorsWidget: WidgetWrapper {
         
         view.addArrangedSubview(selectSettingsRow(
             title: localizedString("Display mode"),
-            action: #selector(changeMode),
+            action: #selector(changeDisplayMode),
             items: SensorsWidgetMode,
             selected: self.modeState.rawValue
         ))
@@ -268,20 +246,18 @@ public class SensorsWidget: WidgetWrapper {
             ))
         }
         
-        if #available(macOS 10.15, *) {
-            view.addArrangedSubview(toggleSettingRow(
-                title: localizedString("Monospaced font"),
-                action: #selector(toggleMonospacedFont),
-                state: self.monospacedFontState
-            ))
-        }
+        view.addArrangedSubview(toggleSettingRow(
+            title: localizedString("Monospaced font"),
+            action: #selector(toggleMonospacedFont),
+            state: self.monospacedFontState
+        ))
         
         view.addArrangedSubview(self.orderTableView)
         
         return view
     }
     
-    @objc private func changeMode(_ sender: NSMenuItem) {
+    @objc private func changeDisplayMode(_ sender: NSMenuItem) {
         guard let key = sender.representedObject as? String else { return }
         self.modeState = StackMode(rawValue: key) ?? .auto
         Store.shared.set(key: "\(self.title)_\(self.type.rawValue)_mode", value: key)

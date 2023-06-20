@@ -26,6 +26,8 @@
 "Open Battery settings" = "เปิดการตั้งค่าแบตเตอรี่";
 "Bluetooth" = "บลูทูธ";
 "Open Bluetooth settings" = "เปิดการตั้งค่าบลูทูธ";
+"Clock" = "Clock";
+"Open Clock settings" = "Open clock settings";
 
 // Words
 "Unknown" = "ไม่ทราบที่มา";
@@ -69,6 +71,8 @@
 "Logarithmic" = "ลอการิทึม";
 "Cores" = "หน่วยความจำ";
 "Settings" = "การตั้งค่า";
+"Name" = "Name";
+"Format" = "Format";
 
 // Setup
 "Stats Setup" = "การตั้งค่าสถิติ";
@@ -159,7 +163,7 @@
 "Network chart widget" = "แผนภูมิเครือข่าย";
 "Speed widget" = "ความเร็ว";
 "Battery widget" = "แบตเตอรี่";
-"Text widget" = "ข้อความ";
+"Stack widget" = "Stack";
 "Memory widget" = "หน่วยความจำ";
 "Static width" = "ความกว้างคงที่";
 "Tachometer widget" = "วัดความเร็ว";
@@ -270,6 +274,7 @@
 "Disk utilization is" = "ปริมาณการใช้งานดิสก์คือ %0";
 "Read color" = "Read color";
 "Write color" = "Write color";
+"Disk usage" = "Disk usage";
 
 // Sensors
 "Temperature unit" = "หน่วยอุณหภูมิ";
@@ -320,6 +325,12 @@
 "Leave empty to disable the check" = "เว้นว่างไว้เพื่อปิดการตรวจสอบ";
 "Transparent pictogram when no activity" = "ไอคอนโปร่งใสเมื่อไม่มีกิจกรรม";
 "Connectivity history" = "Connectivity history";
+"Auto-refresh public IP address" = "Auto-refresh public IP address";
+"Every hour" = "Every hour";
+"Every 12 hours" = "Every 12 hours";
+"Every 24 hours" = "Every 24 hours";
+"Network activity" = "Network activity";
+"Last reset" = "Last reset %0 ago";
 
 // Battery
 "Level" = "ระดับ";
@@ -356,10 +367,15 @@
 "current / maximum / designed" = "ปัจจุบัน / สูงสุด / ออกแบบ";
 "Low power mode" = "โหมดพลังงานต่ำ";
 "Percentage inside the icon" = "เปอร์เซ็นต์ภายในไอคอน";
+"Colorize battery" = "Colorize battery";
 
 // Bluetooth
 "Battery to show" = "แบตเตอรี่ที่แสดง";
 "No Bluetooth devices are available" = "ไม่มีอุปกรณ์ Bluetooth ที่ใช้งานได้";
+
+// Clock
+"Time zone" = "Time zone";
+"Local" = "Local";
 
 // Colors
 "Based on utilization" = "อ้างอิงจากการใช้งาน";

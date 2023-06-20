@@ -36,13 +36,14 @@ internal class Portal: NSStackView, Portal_p {
         
         self.orientation = .vertical
         self.distribution = .fillEqually
+        self.spacing = Constants.Popup.spacing*2
         self.edgeInsets = NSEdgeInsets(
-            top: Constants.Popup.margins,
-            left: Constants.Popup.margins,
-            bottom: Constants.Popup.margins,
-            right: Constants.Popup.margins
+            top: Constants.Popup.spacing*2,
+            left: Constants.Popup.spacing*2,
+            bottom: Constants.Popup.spacing*2,
+            right: Constants.Popup.spacing*2
         )
-        self.spacing = 0
+        self.addArrangedSubview(PortalHeader(name))
         
         let box: NSStackView = NSStackView()
         box.heightAnchor.constraint(equalToConstant: 13).isActive = true
@@ -72,18 +73,16 @@ internal class Portal: NSStackView, Portal_p {
     
     public func loadCallback(_ value: Battery_Usage) {
         DispatchQueue.main.async(execute: {
-            if (self.window?.isVisible ?? false) || !self.initialized {
-                self.levelField.stringValue = "\(Int(abs(value.level) * 100))%"
-                
-                var seconds: Double = 0
-                if value.timeToEmpty != -1 && value.timeToEmpty != 0 {
-                    seconds = Double((value.isBatteryPowered ? value.timeToEmpty : value.timeToCharge)*60)
-                }
-                self.timeField.stringValue = seconds != 0 ? seconds.printSecondsToHoursMinutesSeconds(short: self.timeFormat == "short") : ""
-                
-                self.batteryView.setValue(abs(value.level))
-                self.initialized = true
+            self.levelField.stringValue = "\(Int(abs(value.level) * 100))%"
+            
+            var seconds: Double = 0
+            if value.timeToEmpty != -1 && value.timeToEmpty != 0 {
+                seconds = Double((value.isBatteryPowered ? value.timeToEmpty : value.timeToCharge)*60)
             }
+            self.timeField.stringValue = seconds != 0 ? seconds.printSecondsToHoursMinutesSeconds(short: self.timeFormat == "short") : ""
+            
+            self.batteryView.setValue(abs(value.level))
+            self.initialized = true
         })
     }
 }

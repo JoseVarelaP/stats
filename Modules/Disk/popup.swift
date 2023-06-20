@@ -230,7 +230,7 @@ internal class DiskView: NSStackView {
     }
     
     override func updateLayer() {
-        self.layer?.backgroundColor = isDarkMode ? NSColor(hexString: "#111111", alpha: 0.25).cgColor : NSColor(hexString: "#f5f5f5", alpha: 1).cgColor
+        self.layer?.backgroundColor = (isDarkMode ? NSColor(red: 17/255, green: 17/255, blue: 17/255, alpha: 0.25) : NSColor(red: 245/255, green: 245/255, blue: 245/255, alpha: 1)).cgColor
     }
     
     public func update(free: Int64, smart: smart_t?) {
@@ -646,7 +646,7 @@ internal class LifeView: NSStackView {
         
         let title = TextView()
         title.font = NSFont.systemFont(ofSize: 11, weight: .light)
-        title.stringValue = "\(localizedString("Life")):"
+        title.stringValue = "\(localizedString("Health")):"
         title.cell?.truncatesLastVisibleLine = true
         
         self.field.font = NSFont.systemFont(ofSize: 11, weight: .regular)

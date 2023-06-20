@@ -109,15 +109,14 @@ public class SpeedWidget: WidgetWrapper {
     public override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
         
-        var width: CGFloat = 1
-        
+        var width: CGFloat = 0
         switch self.modeState {
         case "oneRow":
             width = self.drawOneRow(dirtyRect)
         case "twoRows":
             width = self.drawTwoRows(dirtyRect)
         default:
-            width = 1
+            width = 0
         }
         
         self.setWidth(width)
@@ -268,8 +267,8 @@ public class SpeedWidget: WidgetWrapper {
     // MARK: - two rows
     
     private func drawTwoRows(_ dirtyRect: NSRect) -> CGFloat {
-        var width: CGFloat = 10
-        var x: CGFloat = 10
+        var width: CGFloat = 7
+        var x: CGFloat = 7
         
         switch self.icon {
         case "dots":
@@ -405,7 +404,7 @@ public class SpeedWidget: WidgetWrapper {
         
         view.addArrangedSubview(selectSettingsRow(
             title: localizedString("Display mode"),
-            action: #selector(changeMode),
+            action: #selector(changeDisplayMode),
             items: SensorsWidgetMode.filter({ $0.key == "oneRow" || $0.key == "twoRows"}),
             selected: self.modeState
         ))
@@ -484,7 +483,7 @@ public class SpeedWidget: WidgetWrapper {
         return view
     }
     
-    @objc private func changeMode(_ sender: NSMenuItem) {
+    @objc private func changeDisplayMode(_ sender: NSMenuItem) {
         guard let key = sender.representedObject as? String else { return }
         self.modeState = key
         Store.shared.set(key: "\(self.title)_\(self.type.rawValue)_mode", value: key)
@@ -498,14 +497,6 @@ public class SpeedWidget: WidgetWrapper {
         findAndToggleEnableNSControlState(self.valueAlignmentView, state: self.valueState)
         Store.shared.set(key: "\(self.title)_\(self.type.rawValue)_value", value: self.valueState)
         self.display()
-        
-        if !self.valueState && self.icon.isEmpty {
-            NotificationCenter.default.post(name: .toggleModule, object: nil, userInfo: ["module": self.title, "state": false])
-            self.state = false
-        } else if !self.state {
-            NotificationCenter.default.post(name: .toggleModule, object: nil, userInfo: ["module": self.title, "state": true])
-            self.state = true
-        }
     }
     
     @objc private func toggleUnits(_ sender: NSControl) {
@@ -517,18 +508,9 @@ public class SpeedWidget: WidgetWrapper {
     @objc private func toggleIcon(_ sender: NSMenuItem) {
         guard let key = sender.representedObject as? String else { return }
         self.icon = key
+        findAndToggleEnableNSControlState(self.transparentIconView, state: self.icon != "none")
         Store.shared.set(key: "\(self.title)_\(self.type.rawValue)_icon", value: key)
         self.display()
-        
-        if !self.valueState && self.icon == "none" {
-            NotificationCenter.default.post(name: .toggleModule, object: nil, userInfo: ["module": self.title, "state": false])
-            self.state = false
-        } else if !self.state {
-            NotificationCenter.default.post(name: .toggleModule, object: nil, userInfo: ["module": self.title, "state": true])
-            self.state = true
-        }
-        
-        findAndToggleEnableNSControlState(self.transparentIconView, state: self.icon != "none")
     }
     
     @objc private func toggleBase(_ sender: NSMenuItem) {
